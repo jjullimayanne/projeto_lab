@@ -25,8 +25,8 @@ let questionUm = prompt("Quanto é 2+2? \n (a) 4 \n (b) 5 " );
 let questionDois = prompt("Qual a raiz quadrada de 16? \n (a) 4 \n (b) 2 ");
     if (questionDois == "a") {
         alert("Muito bom!");
-        var finalD =  document.getElementById("certa");
-        final.innerHTML = "Qual o dobro de 5?";
+        var finalId =  document.getElementById("certa");
+        finalId.innerHTML = "Qual a raiz quadrada de 16?";
 
     } else {
         alert("Não foi dessa vez!");
