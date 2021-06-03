@@ -1,4 +1,3 @@
-
 let qualOSeuNome = prompt("Qual o seu nome?")
 
 alert(`Bem vindo(a) ${qualOSeuNome} `)
@@ -13,41 +12,41 @@ const question = prompt("Você quer continuar? \n  (a) sim \n (b) não ");
         
     }
 
+const erradas = document.getElementById('erradas');
+const certas = document.getElementById('certas');
+
 let questionUm = prompt("Quanto é 2+2? \n (a) 4 \n (b) 5 " );
     if (questionUm == "a") {
-        alert("Muito bem!");
+  
+        certas.innerHTML = 'Questão 1';
+        
         
     } else {
-        alert("Desculpa, você errou!");
+
+        erradas.innerHTML = 'Questão';
+       
         
     }
+    
 
 let questionDois = prompt("Qual a raiz quadrada de 16? \n (a) 4 \n (b) 2 ");
     if (questionDois == "a") {
-        alert("Muito bom!");
-        var finalId =  document.getElementById("certa");
-        finalId.innerHTML = "Qual a raiz quadrada de 16?";
+        
+        certas.innerHTML = 'Questão 2';
 
     } else {
-        alert("Não foi dessa vez!");
+        erradas.innerHTML = 'Questão 2';
         
     }
 
 
 let questionTres = prompt("Qual o dobro de 5? \n (a) 8 (b) 10" );
     if (questionTres == "b") {
-        alert("Execelente");
-
-      var final =  document.getElementById("certa");
-        final.innerHTML = "Qual o dobro de 5?";
+        certas.innerHTML = 'Questão 3';
+       
 }
      else {
-        alert("Não foi dessa vez!");
-
-        var final =  document.getElementById("errada");
-        final.innerHTML = "Qual o dobro de 5?";
+        erradas.innerHTML = 'Questão 3';
         
   
     }
-
-
